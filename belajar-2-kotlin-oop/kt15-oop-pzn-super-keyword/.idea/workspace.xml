@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3da4a176-130e-4a11-a312-89b3af2c2019" name="Default Changelist" comment="" />
+    <list default="true" id="3da4a176-130e-4a11-a312-89b3af2c2019" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../kt02-oop-pzn-class/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kt14-oop-pzn-properties-overriding/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt02-oop-pzn-class/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt02-oop-pzn-class/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt03-oop-pzn-object/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt03-oop-pzn-object/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt04-oop-pzn-properties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt04-oop-pzn-properties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt05-oop-pzn-constructor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt05-oop-pzn-constructor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt06-oop-pzn-initializer-block/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt06-oop-pzn-initializer-block/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/out/production/kt07-oop-pzn-secondary-constructor/app/SecondaryConstrustorKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/out/production/kt07-oop-pzn-secondary-constructor/app/SecondaryConstrustorKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/src/app/secondaryConstrustor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../kt07-oop-pzn-secondary-constructor/src/app/secondaryConstrustor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt08-oop-pzn-constructor-properties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt08-oop-pzn-constructor-properties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt09-oop-pzn-function/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt09-oop-pzn-function/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt10-oop-pzn-function-overloading/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt10-oop-pzn-function-overloading/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt11-oop-pzn-this-keyword/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt11-oop-pzn-this-keyword/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt12-oop-pzn-inheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt12-oop-pzn-inheritance/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt13-oop-pzn-function-overriding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt13-oop-pzn-function-overriding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kt14-oop-pzn-properties-overriding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kt14-oop-pzn-properties-overriding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +36,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1wbQjjQObpPVjeG1WVGuyxhTXRb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />

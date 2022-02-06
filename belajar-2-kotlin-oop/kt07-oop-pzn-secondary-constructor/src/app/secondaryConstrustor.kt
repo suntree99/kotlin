@@ -8,4 +8,6 @@ fun main() {
 
     println(adress1.street)
     println(adress2.street)
+    println(adress2.city)
+    println(adress2.country)
 }
