@@ -52,6 +52,10 @@
 
 * Instalasi Gradle
 	* Windows
+		* Download dan Instal [binary-only or complete](https://gradle.org/releases/) dengan versi yang disarankan adalah `6.6`
+		* Konfigurasi _Path_ pada system variable dengan value direktori instalasi Gradle\gradle-6.6\bin
+		* Cek instalasi pada Command Prompt dengan perintah `gradle -v`
+
 	* Linux dan macOS
 		* Instal via SDKMAN
 			```cmd
@@ -65,6 +69,14 @@
 			```cmd
 			gradle -v
 			```
+
+* Instalasi IntelliJ IDEA
+	* Requirement
+		* Microsoft Windows 10/8/7/Vista/2003/XP (incl.64-bit) / macOS 10.8.3 atau lebih tinggi / GNOME atau KDE desktop
+		* 2 GB RAM minimum, 4 GB RAM direkomendasikan
+		* 1.5 GB ruang kosong pada penyimpanan
+		* 1024x768 minimal resolusi layar
+	* Dodol
 
 ## Kotlin is nicer Java
 
