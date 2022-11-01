@@ -33,12 +33,11 @@
 				```cmd
 				sdk version
 				```
-
 		* Instal OpenJDK
 			```cmd
 			sdk install java 8.0.332-zulu
 			```
-			Cek version
+			Cek version yang tersedia
 			```cmd
 			sdk list java
 			```
@@ -51,7 +50,21 @@
 			sdk current java
 			```
 
-
+* Instalasi Gradle
+	* Windows
+	* Linux dan macOS
+		* Instal via SDKMAN
+			```cmd
+			sdk install gradle 6.6
+			```
+			Cek version yang tersedia
+			```cmd
+			sdk list gradle
+			```
+			Cek version terkini
+			```cmd
+			gradle -v
+			```
 
 ## Kotlin is nicer Java
 
