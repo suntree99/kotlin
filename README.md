@@ -46,7 +46,7 @@
 			```cmd
 			sdk default java <another-version>
 			```
-			Cek version terkini, _contoh hasil `Using java version 11.0.8-open`_
+			Cek version terkini, _contoh hasil : `Using java version 11.0.8-open`_
 			```cmd
 			sdk current java
 			```
