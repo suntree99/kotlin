@@ -17,18 +17,46 @@
 			* Instal Curl
 				```cmd
 				sudo apt install curl
+				```
+				* Cek version
+				```cmd
 				curl -version
 				```
-				Untuk macOS bisa menggunakan homebrew
+				* Untuk macOS bisa menggunakan homebrew
 				```cmd
 				brew install curl
 				```
 			* Instal SDKMAN
 				```cmd
 				curl -s "https://get.sdkman.io" | bash
-				source "$HOME/.sdkman/bin/sdkman-init.sh"
-				sdk version // SDKMAN 5.11.0+644
 				```
+				```cmd
+				source "$HOME/.sdkman/bin/sdkman-init.sh"
+				```
+				* Cek version
+				```cmd
+				sdk version
+				```
+				_SDKMAN 5.11.0+644_
+		* Instal OpenJDK
+			```cmd
+			sdk install java 8.0.332-zulu
+			```
+			* Cek version
+			```cmd
+			sdk list java
+			```
+			* Untuk mengganti version gunakan perintah
+			```cmd
+			sdk default java <another-version>
+			```
+			Contoh version : `11.0.8-open`
+			* Cek version terkini
+			```cmd
+			sdk current java
+			```
+			_Using java version 11.0.8-open_
+
 
 
 ## Kotlin is nicer Java
