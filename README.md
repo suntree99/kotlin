@@ -2,13 +2,17 @@
 
 ## Instalasi
 
-* Instalasi Open JDK
+* Instalasi OpenJDK
 	* Windows
-		* Download [*Installer .msi*](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk) dengan spesifikasi
+		* Download dan Instal [.msi](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk) dengan spesifikasi
 			* Java Version : Java 8 (LST)
 			* Operating System : Windows
 			* Architecture : x86 64-bit
 			* Java Package : JDK
+		* Kofigurasi JAVA_HOME pada system variable dengan value mengarah pada direktori Zulu/zulu-8
+		* Cek instalasi pada Command Prompt dengan perintah `java -version`
+
+	* Linux dan macOS
 		* 
 
 
