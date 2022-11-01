@@ -72,7 +72,9 @@
 
 * Instalasi IntelliJ IDEA
 	* Requirement
-		* Microsoft Windows 10/8/7/Vista/2003/XP (incl.64-bit) / macOS 10.8.3 atau lebih tinggi / GNOME atau KDE desktop
+		* Microsoft Windows 10/8/7/Vista/2003/XP (incl.64-bit) /
+			macOS 10.8.3 atau lebih tinggi /
+			GNOME atau KDE desktop
 		* 2 GB RAM minimum, 4 GB RAM direkomendasikan
 		* 1.5 GB ruang kosong pada penyimpanan
 		* 1024x768 minimal resolusi layar
