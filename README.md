@@ -4,11 +4,7 @@
 
 * Instalasi OpenJDK
 	* Windows
-		* Download dan Instal [.msi](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk) dengan spesifikasi
-			* Java Version : Java 8 (LST)
-			* Operating System : Windows
-			* Architecture : x86 64-bit
-			* Java Package : JDK
+		* Download dan Instal [.msi](https://www.azul.com/downloads/?version=java-8-lts&os=windows&architecture=x86-64-bit&package=jdk) dengan spesifikasi *Java 8 (LST), Windows, x86 64-bit, JDK*
 		* Konfigurasi JAVA_HOME pada system variable dengan value direktori instalasi Zulu/zulu-8
 		* Cek instalasi pada Command Prompt dengan perintah `java -version`
 
@@ -18,11 +14,11 @@
 				```cmd
 				sudo apt install curl
 				```
-				* Cek version
+				Cek version
 				```cmd
 				curl -version
 				```
-				* Untuk macOS bisa menggunakan homebrew
+				Untuk macOS bisa menggunakan homebrew
 				```cmd
 				brew install curl
 				```
@@ -33,29 +29,29 @@
 				```cmd
 				source "$HOME/.sdkman/bin/sdkman-init.sh"
 				```
-				* Cek version
+				Cek version
 				```cmd
 				sdk version
 				```
-				_SDKMAN 5.11.0+644_
+					_SDKMAN 5.11.0+644_
 		* Instal OpenJDK
 			```cmd
 			sdk install java 8.0.332-zulu
 			```
-			* Cek version
+			Cek version
 			```cmd
 			sdk list java
 			```
-			* Untuk mengganti version gunakan perintah
+			Untuk mengganti version gunakan perintah
 			```cmd
 			sdk default java <another-version>
 			```
-			Contoh version : `11.0.8-open`
-			* Cek version terkini
+				_Contoh version : `11.0.8-open`_
+			Cek version terkini
 			```cmd
 			sdk current java
 			```
-			_Using java version 11.0.8-open_
+				_Using java version 11.0.8-open_
 
 
 
