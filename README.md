@@ -9,7 +9,7 @@
 			* Operating System : Windows
 			* Architecture : x86 64-bit
 			* Java Package : JDK
-		* Kofigurasi JAVA_HOME pada system variable dengan value mengarah pada direktori Zulu/zulu-8
+		* Konfigurasi JAVA_HOME pada system variable dengan value direktori instalasi Zulu/zulu-8
 		* Cek instalasi pada Command Prompt dengan perintah `java -version`
 
 	* Linux dan macOS
