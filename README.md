@@ -13,15 +13,23 @@
 		* Cek instalasi pada Command Prompt dengan perintah `java -version`
 
 	* Linux dan macOS
-		* 
+		* Instalasi SDKMAN
+			* Instal Curl
+				```console
+				sudo apt install curl
+				curl -version
+				```
+				Untuk macOS bisa menggunakan homebrew
+				```console
+				brew install curl
+				```
+			* instal SDKMAN
+				```console
+				curl -s "https://get.sdkman.io" | bash
+				source "$HOME/.sdkman/bin/sdkman-init.sh"
+				sdk version // SDKMAN 5.11.0+644
+				```
 
-
-```<bahasa>
-git add .
-git commit -m 'Update README.md'
-git push
-
-```
 
 ## Kotlin is nicer Java
 
