@@ -15,16 +15,16 @@
 	* Linux dan macOS
 		* Instalasi SDKMAN
 			* Instal Curl
-				```console
+				```cmd
 				sudo apt install curl
 				curl -version
 				```
 				Untuk macOS bisa menggunakan homebrew
-				```console
+				```cmd
 				brew install curl
 				```
-			* instal SDKMAN
-				```console
+			* Instal SDKMAN
+				```cmd
 				curl -s "https://get.sdkman.io" | bash
 				source "$HOME/.sdkman/bin/sdkman-init.sh"
 				sdk version // SDKMAN 5.11.0+644
