@@ -29,11 +29,11 @@
 				```cmd
 				source "$HOME/.sdkman/bin/sdkman-init.sh"
 				```
-				Cek version
+				Cek version, _contoh hasil : `SDKMAN 5.11.0+644`_
 				```cmd
 				sdk version
 				```
-				_SDKMAN 5.11.0+644_
+
 		* Instal OpenJDK
 			```cmd
 			sdk install java 8.0.332-zulu
@@ -42,16 +42,14 @@
 			```cmd
 			sdk list java
 			```
-			Untuk mengganti version gunakan perintah
+			Untuk mengganti version gunakan perintah dibawah ini, _contoh version : `11.0.8-open`_
 			```cmd
 			sdk default java <another-version>
 			```
-			_Contoh version : `11.0.8-open`_
-			Cek version terkini
+			Cek version terkini, _contoh hasil `Using java version 11.0.8-open`_
 			```cmd
 			sdk current java
 			```
-			_Using java version 11.0.8-open_
 
 
 
