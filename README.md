@@ -33,7 +33,7 @@
 				```cmd
 				sdk version
 				```
-					_SDKMAN 5.11.0+644_
+				_SDKMAN 5.11.0+644_
 		* Instal OpenJDK
 			```cmd
 			sdk install java 8.0.332-zulu
@@ -46,12 +46,12 @@
 			```cmd
 			sdk default java <another-version>
 			```
-				_Contoh version : `11.0.8-open`_
+			_Contoh version : `11.0.8-open`_
 			Cek version terkini
 			```cmd
 			sdk current java
 			```
-				_Using java version 11.0.8-open_
+			_Using java version 11.0.8-open_
 
 
 
