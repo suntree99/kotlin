@@ -1,5 +1,27 @@
 # Kotlin
 
+## Kotlin is nicer Java
+
+Perbedaan sintaks Java dan Kotlin
+* Java
+	```java
+	public class SomeClasses{
+		public static void main(String[] args){
+			System.out.println("Hello");
+		}
+	}
+	```
+* Kotlin
+	```kotlin
+	class SomeClasses{
+		fun main(){
+			println("Hello")
+		}
+	}
+	```
+	* _Kotlin tidak memerlukan semicolon atau titik koma (;)_
+	* _Kotlin lebih ringkas dan tidak perlu banyak boilerplate code_
+
 ## Instalasi
 
 * Instalasi OpenJDK
@@ -108,27 +130,6 @@
 		```cmd
 		gradle run
 		```
-
-## Kotlin is nicer Java
-
-Perbedaan sintaks Java dan Kotlin
-* Java
-	```java
-	public class SomeClasses{
-		public static void main(String[] args){
-			System.out.println("Hello");
-		}
-	}
-	```
-* Kotlin
-	```kotlin
-	class SomeClasses{
-		fun main(){
-			println("Hello")
-		}
-	}
-	```
-	* _Kotlin tidak memerlukan semicolon atau titik koma (;)_
 
 ##
 ##
