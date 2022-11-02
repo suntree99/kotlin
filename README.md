@@ -131,6 +131,18 @@ Perbedaan sintaks Java dan Kotlin
 		gradle run
 		```
 
+* Membuat Program dengan IntelliJ IDEA
+	* Buka IntelliJ IDEA dan klik *New Project*
+	* Pilih Gradle (kiri) sebagai _build tools_
+	* Centang Kotlin DSL build script sebagai _build script_
+	* Centang Java dan Kotlin/JVM pada _Additional Libraries and Frameworks_ dan klik Next
+	* Isikan nama project (misal: kotlin-starter)
+	* Tentukan lokasi folder project 
+	* Isikan GroupId dengan nama package (misal: com.darma1budi.kotlin)
+	* Isikan ArtifactId (misal: kotlin-starter)
+	* Isikan Version (default: 1.0-SNAPSHOT)
+
+
 ##
 ##
 
