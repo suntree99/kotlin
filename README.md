@@ -72,13 +72,42 @@
 
 * Instalasi IntelliJ IDEA
 	* Requirement
-		* Microsoft Windows 10/8/7/Vista/2003/XP (incl.64-bit) /
-			macOS 10.8.3 atau lebih tinggi /
-			GNOME atau KDE desktop
+		* Windows 10/8/7/Vista/2003/XP (incl.64-bit) / macOS 10.8.3 atau lebih tinggi / GNOME atau KDE desktop
 		* 2 GB RAM minimum, 4 GB RAM direkomendasikan
 		* 1.5 GB ruang kosong pada penyimpanan
 		* 1024x768 minimal resolusi layar
-	* Dodol
+	* Download [IntelliJ IDEA](https://www.jetbrains.com/idea/download/other.html) dengan versi yang disarankan adalah `2020.3.1 Community`
+	* Instal IntelliJ IDEA
+		* Linux
+			* Ekstrak berkas .tar.gz
+				```cmd
+				tar xvf ideaIC-2020.3.1.tar.gz
+				```
+			* Masuk ke folder bin
+				```cmd
+				cd idea-IC-203.6682.168/bin/
+				```
+			* Jalankan script `shell script idea.sh`
+				```cmd
+				./idea.sh
+				```
+		* Windows
+			* Instal idealC-2020.3.1.exe
+		* macOS
+			* Instal idealC-2020.3.1.dmg
+
+## Program pertama Kotlin
+
+* Membuat Program dengan Gradle
+	* Buat folder project dan buka cmd pada directory tersebut (di address bar bisa ketik cmd)
+	* Build project dengan perintah
+		```cmd
+		gradle init --type kotlin-application --dsl kotlin --project-name kotlin-starter --package com.darma1budi.kotlin
+		```
+	* Jalankan project dengan perintah
+		```cmd
+		gradle run
+		```
 
 ## Kotlin is nicer Java
 
