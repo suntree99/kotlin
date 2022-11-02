@@ -152,7 +152,6 @@ Perbedaan sintaks Java dan Kotlin
 		}
 		```
 	* Jalankan program dengan klik tompol run (play hijau) disamping fungsi main() atau tekan Ctrl + Shift + F10
-	
 ##
 ##
 
