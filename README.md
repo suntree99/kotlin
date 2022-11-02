@@ -137,11 +137,10 @@ Perbedaan sintaks Java dan Kotlin
 	* Centang Kotlin DSL build script sebagai _build script_
 	* Centang Java dan Kotlin/JVM pada _Additional Libraries and Frameworks_ dan klik Next
 	* Isikan nama project (misal: kotlin-starter)
-	* Tentukan lokasi folder project 
+	* Isikan lokasi folder project 
 	* Isikan GroupId dengan nama package (misal: com.darma1budi.kotlin)
 	* Isikan ArtifactId (misal: kotlin-starter)
-	* Isikan Version (default: 1.0-SNAPSHOT)
-
+	* Isikan Version (default: 1.0-SNAPSHOT) dan klik Finish
 
 ##
 ##
