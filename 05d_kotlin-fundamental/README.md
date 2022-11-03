@@ -125,6 +125,34 @@ val name = "Budi"
 	```
 	_Raw String memungkinkan kita menuliskan multiline dan arbitrary text tanpa escaped character._
 
+## Function
+* Struktur deklarasi function
+	```kotlin
+	fun functionName(param1: Type1, param2: Type2, ...): ReturnType {
+		return result
+	}
+	```
+	```kotlin
+	fun setUser(name: String, age: Int): String {
+		return "Your name is $name, and you $age years old"
+	}
+	```
+	* Jika fungsi hanya berisi satu expression untuk menentukan nilai kembalian maka dapat ditulis dengan struktur expression function
+	```kotlin
+	fun setUser(name: String, age: Int): String = "Your name is $name, and you $age years old"
+	```
+	* Jika fungsi tidak mengembalikan nilai maka digunakan `Unit` sebagai tipe kembaliannya
+	```kotlin
+	fun printUser(name: String): Unit {
+		print("Your name is $name")
+	}
+	```
+	Atau dapat dihilangkan
+	```kotlin
+	fun printUser(name: String): Unit {
+		print("Your name is $name")
+	}
+	```
 ##
 ##
 
