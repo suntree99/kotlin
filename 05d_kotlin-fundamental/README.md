@@ -24,7 +24,7 @@
 		```kotlin
 		var name: String = "Budi Darmawan"
 		```
-		* Tipe data boleh tidak ditulis jika variable langsung diinisialisasi (diberikan nilai)
+		* Tipe data boleh tidak ditulis jika variable langsung diinisialisasi (diberikan nilai) `var name = "Budi Darmawan"`
 
 	* Tipe data menentukan operasi
 		* Operasi + pada String
@@ -32,7 +32,7 @@
 			fun main() {
 				val firstName = "Budi "
 				val lastName = "Darmawan"
-				print(firstWord + lastWord) // Budi Darmawn
+				print(firstWord + lastWord) // Budi Darmawan
 			}
 			```
 		* Operasi + pada Int
