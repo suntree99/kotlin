@@ -99,7 +99,7 @@ val name = "Budi"
 	* _\n: membuat baris baru di dalam teks._
 	* _\’: menambah karakter single quote kedalam teks._
 	* _\”: menambah karakter double quote kedalam teks._
-	* _\\: menambah karakter backslash kedalam teks._
+	* _\\\: menambah karakter backslash kedalam teks._
 	* _\u00A9: akan menampilkan unicode ©_
 
 * Raw String
