@@ -103,26 +103,26 @@ val name = "Budi"
 	_\u00A9: akan menampilkan unicode ©_
 
 * Raw String
-Raw String memungkinkan kita menuliskan multiline dan arbitrary text tanpa escaped character.
-```kotlin
-fun main() {
-    val line = """
-        Line 1
-        Line 2
-        Line 3
-        Line 4
-    """.trimIndent()
- 
-    print(line)
-}
+	Raw String memungkinkan kita menuliskan multiline dan arbitrary text tanpa escaped character.
+	```kotlin
+	fun main() {
+		val line = """
+			Line 1
+			Line 2
+			Line 3
+			Line 4
+		""".trimIndent()
+	
+		print(line)
+	}
 
-/*
-        Line 1
-        Line 2
-        Line 3
-        Line 4
- */
-```
+	/*
+			Line 1
+			Line 2
+			Line 3
+			Line 4
+	*/
+	```
 
 ##
 ##
