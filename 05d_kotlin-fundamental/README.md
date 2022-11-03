@@ -355,7 +355,7 @@ val name = "Budi"
  
     print(intNumber3 + stringNumber.toInt()) // 26
 	```
-	* _Dalam konversi perlu memperhatikan range overflow, berikut beberapa fungsi konversi number:_
+	_Dalam konversi perlu memperhatikan range overflow, berikut beberapa fungsi konversi number:_
 	* _toByte(): Byte_
 	* _toShort(): Short_
 	* _toInt(): Int_
@@ -458,7 +458,7 @@ NullPointerException (NPE) is *“The Billion Dollar Mistake”*
 	```
 
 * Non-Null Assertion (!!)
-	* _Non-null assertion membuat kompiler mengizinkan akses objek nullable. Namun tetap akan berjumpa dengan NPE jika objek bernilai null._
+	* _Non-null assertion membuat objek nullable dapat diakses. Namun tetap berisiko NPE jika objek bernilai null._
 	```kotlin
 	val text: String? = null
 	val textLength = text!!.length // ready to go ???
