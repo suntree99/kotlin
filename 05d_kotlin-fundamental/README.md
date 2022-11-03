@@ -369,6 +369,53 @@ val name = "Budi"
 	val readableNumber = 1_000_000 // mudah dibaca dengan tanda underscore 
     print(readableNumber) // 1000000
 	```
+## Array
+Array di Kotlin direpresentasikan oleh kelas Array yang memiliki fungsi *get* dan *set* serta properti *size*.
+
+* Array dapat dibuat dengan library function *arrayOf()*
+	```kotlin
+	val array = arrayOf(1, 3, 5, 7)
+	```
+
+* Array dapat menyimpan tipe data yang berbeda
+	```kotlin
+	val mixArray = arrayOf(1, 3, 5, 7 , "Dicoding" , true)
+	```
+
+* Array dengan tipe data tertentu
+	* intArrayOf() : IntArray
+	* booleanArrayOf() : BooleanArray
+	* charArrayOf() : CharArray
+	* longArrayOf() : LongArray
+	* shortArrayOf() : ShortArray
+	* byteArrayOf() : ByteArray*
+	```kotlin
+	val intArray = intArrayOf(1, 3, 5, 7)
+	```
+
+* Mengakses nilai Array
+	```kotlin
+	fun main() {
+		val intArray = intArrayOf(1, 3, 5, 7)
+		print(intArray[2]) // 5
+	}
+	```
+
+* Mengganti nilai Array
+	```kotlin
+	fun main() {
+		val intArray = intArrayOf(1, 3, 5, 7)  // [1, 3, 5, 7]
+		intArray[2] = 11                       // [1, 3, 11, 7]
+
+		print(intArray[2]) // 11
+	}
+	```
+
+* Array juga dapat dibuat dengan Cunstructor *Array()* dengan 2 argumen yaitu *size* dan fungsi lambda
+	```kotlin
+	val intArray = Array(4, { i -> i * i }) // [0, 1, 4, 9]
+	```
+
 
 ##
 ##
