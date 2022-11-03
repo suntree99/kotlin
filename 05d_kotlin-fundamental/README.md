@@ -95,12 +95,12 @@ val name = "Budi"
 	val statement = "Kotlin is \"Awesome!\""
 	```
 	_Selain \” di atas, terdapat beberapa escaped character lain di dalam sebuah String, antara lain:_
-	\t: menambah tab ke dalam teks.
-	\n: membuat baris baru di dalam teks.
-	\’: menambah karakter single quote kedalam teks.
-	\”: menambah karakter double quote kedalam teks.
-	\\: menambah karakter backslash kedalam teks.
-	\u00A9: akan menampilkan unicode ©
+	* _\t: menambah tab ke dalam teks._
+	* _\n: membuat baris baru di dalam teks._
+	* _\’: menambah karakter single quote kedalam teks._
+	* _\”: menambah karakter double quote kedalam teks._
+	* _\\: menambah karakter backslash kedalam teks._
+	* _\u00A9: akan menampilkan unicode ©_
 
 * Raw String
 	
