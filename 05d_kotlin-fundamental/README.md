@@ -153,6 +153,25 @@ val name = "Budi"
 		print("Your name is $name")
 	}
 	```
+
+* Pemanggilan function
+	```kotlin
+	fun setUser(name: String, age: Int) = "Your name is $name, and you $age years old"
+	
+	fun printUser(name: String) {
+		println("Your name is $name")
+	}
+
+	fun main() {
+		val user = setUser("Budi", 30)
+		println(user) // Your name is Budi, and you 30 years old
+	
+		printUser("Budi") // Your name is Budi
+	}
+	```
+
+## 
+
 ##
 ##
 
