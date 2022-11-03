@@ -14,7 +14,7 @@
 	*/
 	```
 
-## Data Types (Operation) & Variable
+## Variable & Data Types (Operation)
 
 * Variable
 	* Struktur deklarasi variabel
@@ -50,7 +50,7 @@ Char digunakan untuk menyimpan karakter tunggal, bisa dibuat menggunakan tanda k
 val character = 'A'
 ```
 
-* Contoh operator pada Char
+* Operasi pada Char
 	```kotlin
 	fun main() {
 		var vocal = 'A'
@@ -69,9 +69,9 @@ val character = 'A'
 ## String
 String digunakan untuk menyimpan kupulan karakter, bisa dibuat menggunakan tanda kutip ganda (" ")
 ```kotlin
-val name = 'Budi'
+val name = "Budi"
 ```
-* Contoh operator pada String
+* Operasi pada String
 	```kotlin
 	fun main() {
 		val text  = "Kotlin"
@@ -81,6 +81,48 @@ val name = 'Budi'
 	}
 	```
 	_Hal ini karena String adalah sekumpulan Char berbentuk Array, sehingga kita bisa mendapatkan karakter tunggal dengan manfaatkan indexing_
+* Loop pada String
+	```kotlin
+	fun main() {
+		val text  = "Kotlin"
+		for (char in text){
+			print("$char ") // K o t l i n 
+		}
+	}
+	```
+* Escaped String
+	```kotlin
+	val statement = "Kotlin is \"Awesome!\""
+	```
+	_Selain \” di atas, terdapat beberapa escaped character lain di dalam sebuah String, antara lain:_
+	_\t: menambah tab ke dalam teks._
+	_\n: membuat baris baru di dalam teks._
+	_\’: menambah karakter single quote kedalam teks._
+	_\”: menambah karakter double quote kedalam teks._
+	_\\: menambah karakter backslash kedalam teks._
+	_\u00A9: akan menampilkan unicode ©_
+
+* Raw String
+Raw String memungkinkan kita menuliskan multiline dan arbitrary text tanpa escaped character.
+```kotlin
+fun main() {
+    val line = """
+        Line 1
+        Line 2
+        Line 3
+        Line 4
+    """.trimIndent()
+ 
+    print(line)
+}
+
+/*
+        Line 1
+        Line 2
+        Line 3
+        Line 4
+ */
+```
 
 ##
 ##
