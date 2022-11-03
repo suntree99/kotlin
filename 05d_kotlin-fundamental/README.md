@@ -281,7 +281,7 @@ val name = "Budi"
 	```kotlin
 	val intNumber = 100
 	```
-	_range -2^31 sampai +2^31-1_
+	_Range -2^31 sampai +2^31-1_
 
 * Long (64 Bit)
 	```kotlin
@@ -290,7 +290,7 @@ val name = "Budi"
 	```kotlin
 	val longNumber = 100L
 	```
-	_range -2^63 sampai +2^63-1_
+	_Range -2^63 sampai +2^63-1_
 
 * Short (16 Bit)
 	```kotlin
@@ -299,25 +299,25 @@ val name = "Budi"
 	```kotlin
 	val longNumber = 100L
 	```
-	_range -2^63 sampai +2^63-1_
+	_Range -2^63 sampai +2^63-1_
 
 * Byte (8 Bit)
 	```kotlin
 	val byteNumber = 0b11010010
 	```
-	_range -128 sampai +127_
+	_Range -128 sampai +127_
 
 * Double (64 Bit)
 	```kotlin
 	val doubleNumber: Double = 1.3
 	```
-	_dapat menyimpan 15-16 angka dibelakang koma_
+	_Dapat menyimpan 15-16 angka dibelakang koma_
 
 * Float (32 Bit)
 	```kotlin
 	val floatNumber: Float = 0.123456789f //yang terbaca hanya 0.1234567
 	```
-	_dapat menyimpan 6-7 angka dibelakang koma_
+	_Dapat menyimpan 6-7 angka dibelakang koma_
 
 * Nilai minimum, maximum dan Overflow
 	```kotlin
@@ -340,8 +340,8 @@ val name = "Budi"
     println(numberOne * numberTwo) // 2
     println(numberOne / numberTwo) // 0 (pembagian dikotlin dibulatkan kebawah)
 	```
-	_Jika pembagian ingin spesifik gunakan tipe data double_
-	_Operasi aritmatika mengikuti prinsip KuKaBaTaKu (Kurung Kali Bagi Tambah Kurang)_
+	* _Jika pembagian ingin spesifik gunakan tipe data double_
+	* _Operasi aritmatika mengikuti prinsip KuKaBaTaKu (Kurung Kali Bagi Tambah Kurang)_
 
 * Konversi Number
 	```kotlin
@@ -355,8 +355,7 @@ val name = "Budi"
  
     print(intNumber3 + stringNumber.toInt()) // 26
 	```
-	_Dalam konversi perlu memperhatikan range overflow_
-	_Beberapa fungsi konversi number:_
+	* _Dalam konversi perlu memperhatikan range overflow, berikut beberapa fungsi konversi number:_
 	* _toByte(): Byte_
 	* _toShort(): Short_
 	* _toInt(): Int_
