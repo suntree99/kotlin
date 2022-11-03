@@ -45,7 +45,7 @@
 		```
 
 ## Char
-	Char digunakan untuk menyimpan karakter tunggal, bisa dibuat menggunakan tanda kutip tunggal (' ')
+## Char digunakan untuk menyimpan karakter tunggal, bisa dibuat menggunakan tanda kutip tunggal (\' \')
 	```kotlin
 	val character = 'A'
 	```
@@ -65,6 +65,7 @@
 	}
 	```
 	_Hal ini karena setiap Char merupakan representasi dari Unicode. Ketika Unicode A (0041) ketika diincrement akan menjadi 0042 yang merupakan Unicode dari B._
+_sdfsdf_
 
 ## String
 	String digunakan untuk menyimpan kupulan karakter, bisa dibuat menggunakan tanda kutip ganfa (" ")
