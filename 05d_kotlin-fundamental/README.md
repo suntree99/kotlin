@@ -46,9 +46,9 @@
 
 ## Char
 Char digunakan untuk menyimpan karakter tunggal, bisa dibuat menggunakan tanda kutip tunggal (' ')
-	```kotlin
-	val character = 'A'
-	```
+```kotlin
+val character = 'A'
+```
 
 * Operator menarik pada Char
 	```kotlin
@@ -68,9 +68,9 @@ Char digunakan untuk menyimpan karakter tunggal, bisa dibuat menggunakan tanda k
 
 ## String
 String digunakan untuk menyimpan kupulan karakter, bisa dibuat menggunakan tanda kutip ganfa (" ")
-	```kotlin
-	val name = 'Budi'
-	```
+```kotlin
+val name = 'Budi'
+```
 
 ##
 ##
