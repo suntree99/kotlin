@@ -194,7 +194,7 @@ val name = "Budi"
 	
 	print(office)
 	```
-* Menyimpan nilai if expression langsung pada variable
+* Menyimpan nilai If Expression langsung pada variable
 	```kotlin
 	val openHours = 7
 	val now = 20
@@ -224,7 +224,9 @@ val name = "Budi"
 	
 	print(office)
 	```
-&#x1F534; _Kotlin tidak mendukung ternary operator (condition ? then : else), karena peran dari operator tersebut sudah digantikan dengan if expressions._
+	&#x1F534; _Kotlin tidak mendukung ternary operator (condition ? then : else), karena peran dari operator tersebut sudah digantikan dengan if expressions._
+
+
 ##
 ##
 
