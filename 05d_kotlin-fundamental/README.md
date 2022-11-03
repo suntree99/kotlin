@@ -440,7 +440,7 @@ NullPointerException (NPE) is *“The Billion Dollar Mistake”*
 	```
 
 ## Safe Calls dan Elvis Operator
-* Safe Calls Operator (?.)
+* Safe Calls Operator (?.) \n
 	_Dengan safe call, kompiler akan melewatkan proses jika objek tersebut bernilai null._
  	```kotlin
 	val text: String? = null
