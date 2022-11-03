@@ -1,8 +1,8 @@
 # Control Flow
 
 * Enumeration
-* When Expression
 * Expression & Statement
+* When Expression
 * While and Do While
 * Range and For Loop
 * Break and Continue Labels
@@ -180,7 +180,7 @@
     fun sum(value1: Int, value2: Int) = value1 + value2
     ```
 
-* Expression di dalam Expressoion (1*4)
+* Expression di dalam Expression (1*4)
     ```kotlin
     fun main() {
         sum(1 , 1 * 4) // Expression dalam expression
@@ -190,6 +190,110 @@
     ```
 
 ## When Expression
+* Struktur When Expression
+    ```kotlin
+    val value = 7
+    when(value){
+        6 -> println("value is 6")
+        7 -> println("value is 7")
+        8 -> println("value is 8")
+        else -> println("value cannot be reached")
+    }
+    ```
+
+* Menyimpan When Expression kedalam variable
+    ```kotlin
+    val value = 7
+    val stringOfValue = when (value) {
+        6 -> "value is 6"
+        7 -> "value is 7"
+        8 -> "value is 8"
+        else -> "value cannot be reached"
+    }
+ 
+    println(stringOfValue)
+    ```
+
+* When Expression dengan 2 atau lebih baris kode menggunakan kurung kurawal {}
+    ```kotlin
+    val value = 7
+    val stringOfValue = when (value) {
+        6 -> {
+            println("Six")
+            "value is 6"
+        }
+        7 -> {
+            println("Seven")
+            "value is 7"
+        }
+        8 -> {
+            println("Eight")
+            "value is 8"
+        }
+        else -> {
+            println("undefined")
+            "value cannot be reached"
+        }
+    }
+ 
+    println(stringOfValue)
+    ```
+
+* When untuk memeriksa instance dengan *is* dan *!is*
+    ```kotlin
+    val anyType : Any = 100L
+    when(anyType){
+        is Long -> println("the value has a Long type")
+        is String -> println("the value has a String type")
+        else -> println("undefined")
+    }
+    ```
+
+* When untuk memeriksa nilai di dalam *range*
+    ```kotlin
+    val value =  27
+    val ranges = 10..50
+ 
+    when(value){
+        in ranges -> println("value is in the range")
+        !in ranges -> println("value is outside the range")
+        else -> println("value undefined")
+    }
+    ```
+
+* When untuk menangkap subjek di dalam sebuah variabel
+    ```kotlin
+    fun main() {
+        val registerNumber = when(val regis = getRegisterNumber()){
+            in 1..50 -> 50 * regis
+            in 51..100 -> 100 * regis
+            else -> regis
+        }
+    }
+    
+    fun getRegisterNumber() = Random.nextInt(100)
+    ```
+
+* If Ekspression digunakan jika kondisi percabangan tidak lebih dari 2 dan tidak terlalu rumit
+    ```kotlin
+    val anyType : Any = 100L
+    if (anyType is Long){
+        println("the value has a Long type")
+    } else {
+        println("the value is not Long type")
+    }
+    ```
+
+* When Expression digunakan untuk kondisi percabangan lebih dari 2
+    ```kotlin
+    val anyType: Any = 100L
+    when (anyType) {
+        is Long -> println("the value has a Long type")
+        is Int -> println("the value has a Int type")
+        is Double -> println("the value has a Double type")
+        else -> println("undefined")
+    }
+    ```
 
 ## While and Do While
 ## Range and For Loop
