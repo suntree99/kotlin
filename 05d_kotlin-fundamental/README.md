@@ -440,14 +440,14 @@ NullPointerException (NPE) is *“The Billion Dollar Mistake”*
 	```
 
 ## Safe Calls dan Elvis Operator
-* Safe Calls Operator (?.) \n
-	_Dengan safe call, kompiler akan melewatkan proses jika objek tersebut bernilai null._
+* Safe Calls Operator (?.)
+	* _Dengan safe call, kompiler akan melewatkan proses jika objek tersebut bernilai null._
  	```kotlin
 	val text: String? = null
 	text?.length
 	```
 * Elvis Operator (?:)
-	_Elvis operator memungkinkan kita untuk menetapkan default value atau nilai dasar jika objek bernilai null._
+	* _Elvis operator memungkinkan kita untuk menetapkan default value atau nilai dasar jika objek bernilai null._
  	```kotlin
 	val text: String? = null
 	val textLength = text?.length ?: 7
@@ -458,7 +458,7 @@ NullPointerException (NPE) is *“The Billion Dollar Mistake”*
 	```
 
 * Non-Null Assertion (!!)
-	_Non-null assertion membuat kompiler mengizinkan akses objek nullable. Namun tetap akan berjumpa dengan NPE jika objek bernilai null._
+	* _Non-null assertion membuat kompiler mengizinkan akses objek nullable. Namun tetap akan berjumpa dengan NPE jika objek bernilai null._
 	```kotlin
 	val text: String? = null
 	val textLength = text!!.length // ready to go ???
