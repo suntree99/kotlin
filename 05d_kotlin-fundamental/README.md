@@ -464,6 +464,32 @@ NullPointerException (NPE) is *“The Billion Dollar Mistake”*
 	val textLength = text!!.length // ready to go ???
 	```
 
+## String Template
+String template membuat variable dapat dimasukan kedalam string tanpa concatenation (+)
+* Tanpa concatenation ($)
+	```kotlin
+	val name = "Kotlin"
+    print("My name is $name") // My name is Kotlin
+	```
+
+* Dengan concatenation (+)
+	```kotlin
+		val name = "Kotlin"
+    print("My name is " + name) // My name is Kotlin
+	```
+
+* Mendukung tipe data selain string
+	```kotlin
+	val name = "Kotlin"
+    val old = 3
+    print("My name is $name, im $old years old")  // My name is Kotlin, im 3 years old
+	```
+
+* Menyisipkan expression dengan kurung kurawal ${}
+	```kotlin
+	val hour = 7
+    print("Office ${if (hour > 7) "already close" else "is open"}") // Office is open
+	```
 
 ##
 ##
