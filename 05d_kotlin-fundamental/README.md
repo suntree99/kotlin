@@ -149,7 +149,7 @@ val name = "Budi"
 		```
 		Atau dapat dihilangkan
 		```kotlin
-		fun printUser(name: String): Unit {
+		fun printUser(name: String) {
 			print("Your name is $name")
 		}
 		```
