@@ -138,21 +138,21 @@ val name = "Budi"
 	}
 	```
 	* Jika fungsi hanya berisi satu expression untuk menentukan nilai kembalian maka dapat ditulis dengan struktur expression function
-	```kotlin
-	fun setUser(name: String, age: Int): String = "Your name is $name, and you $age years old"
-	```
+		```kotlin
+		fun setUser(name: String, age: Int): String = "Your name is $name, and you $age years old"
+		```
 	* Jika fungsi tidak mengembalikan nilai maka digunakan `Unit` sebagai tipe kembaliannya
-	```kotlin
-	fun printUser(name: String): Unit {
-		print("Your name is $name")
-	}
-	```
-	Atau dapat dihilangkan
-	```kotlin
-	fun printUser(name: String): Unit {
-		print("Your name is $name")
-	}
-	```
+		```kotlin
+		fun printUser(name: String): Unit {
+			print("Your name is $name")
+		}
+		```
+		Atau dapat dihilangkan
+		```kotlin
+		fun printUser(name: String): Unit {
+			print("Your name is $name")
+		}
+		```
 
 * Pemanggilan function
 	```kotlin
