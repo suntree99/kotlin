@@ -14,7 +14,7 @@
 	*/
 	```
 
-## Data Types & Variable
+## Data Types (Operation) & Variable
 
 * Variable
 	* Struktur deklarasi variabel
@@ -26,23 +26,29 @@
 		```
 		* Tipe data boleh tidak ditulis jika variable langsung diinisialisasi (diberikan nilai) `var name = "Budi Darmawan"`
 
-	* Tipe data menentukan operasi
-		* Operasi + pada String
-			```kotlin
-			fun main() {
-				val firstName = "Budi "
-				val lastName = "Darmawan"
-				print(firstWord + lastWord) // Budi Darmawan
-			}
-			```
-		* Operasi + pada Int
-			```kotlin
-			fun main() {
-				val valueA: Int = 10
-				val valueB = 20
-				print(valueA + valueB) // 30
-			}
-			```
+* Tipe data menentukan operasi
+	* Operasi + pada String
+		```kotlin
+		fun main() {
+			val firstName = "Budi "
+			val lastName = "Darmawan"
+			print(firstWord + lastWord) // Budi Darmawan
+		}
+		```
+	* Operasi + pada Int
+		```kotlin
+		fun main() {
+			val valueA: Int = 10
+			val valueB = 20
+			print(valueA + valueB) // 30
+		}
+		```
+
+## Char
+	Untuk mendefinisikan variabel Char bisa menggunakan tanda kutip tunggal (' ')
+	```kotlin
+	val character = 'A'
+	```
 
 ##
 ##
