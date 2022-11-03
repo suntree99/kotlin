@@ -6,6 +6,7 @@
 	```kotlin
 	// single line comment
 	```
+
 * Multi Line Comment
 	```kotlin
 	/*
@@ -14,7 +15,7 @@
 	*/
 	```
 
-## Variable & Data Types (Operation)
+## Variable & Operation
 
 * Variable
 	* Struktur deklarasi variabel
@@ -26,22 +27,18 @@
 		```
 		* Tipe data boleh tidak ditulis jika variable langsung diinisialisasi (diberikan nilai) `var name = "Budi Darmawan"`
 
-* Tipe data menentukan operasi
+* Operasi pada Tipe Data
 	* Operasi + pada String
 		```kotlin
-		fun main() {
-			val firstName = "Budi "
-			val lastName = "Darmawan"
-			print(firstWord + lastWord) // Budi Darmawan
-		}
+		val firstName = "Budi "
+		val lastName = "Darmawan"
+		print(firstWord + lastWord) // Budi Darmawan
 		```
-	* Operasi + pada Int
+	* Operasi + pada Integer
 		```kotlin
-		fun main() {
-			val valueA: Int = 10
-			val valueB = 20
-			print(valueA + valueB) // 30
-		}
+		val valueA: Int = 10
+		val valueB = 20
+		print(valueA + valueB) // 30
 		```
 
 ## Char
@@ -52,44 +49,41 @@ val character = 'A'
 
 * Operasi pada Char
 	```kotlin
-	fun main() {
-		var vocal = 'A'
+	var vocal = 'A'
 
-		println("Vocal " + vocal++) // Vocal A
-		println("Vocal " + vocal++) // Vocal B
-		println("Vocal " + vocal++) // Vocal C
-		println("Vocal " + vocal--) // Vocal D
-		println("Vocal " + vocal--) // Vocal C
-		println("Vocal " + vocal--) // Vocal B
-		println("Vocal " + vocal--) // Vocal A
-	}
+	println("Vocal " + vocal++) // Vocal A
+	println("Vocal " + vocal++) // Vocal B
+	println("Vocal " + vocal++) // Vocal C
+	println("Vocal " + vocal--) // Vocal D
+	println("Vocal " + vocal--) // Vocal C
+	println("Vocal " + vocal--) // Vocal B
+	println("Vocal " + vocal--) // Vocal A
 	```
-	_Hal ini karena setiap Char merupakan representasi dari Unicode. Ketika Unicode A (0041) ketika diincrement akan menjadi 0042 yang merupakan Unicode dari B._
+	_Hal ini karena setiap Char merupakan representasi dari Unicode. Ketika Unicode A (0041) diincrement akan menjadi 0042 yang merupakan Unicode dari B._
 
 ## String
-String digunakan untuk menyimpan kupulan karakter, bisa dibuat menggunakan tanda kutip ganda (" ")
+String digunakan untuk menyimpan kumpulan karakter, bisa dibuat menggunakan tanda kutip ganda (" ")
 ```kotlin
 val name = "Budi"
 ```
+
 * Operasi pada String
 	```kotlin
-	fun main() {
-		val text  = "Kotlin"
-		val firstChar = text[0]
+	val text  = "Kotlin"
+	val firstChar = text[0]
 
-		print("First character of $text is $firstChar") // First character of Kotlin is K
-	}
+	print("First character of $text is $firstChar") // First character of Kotlin is K
 	```
-	_Hal ini karena String adalah sekumpulan Char berbentuk Array, sehingga kita bisa mendapatkan karakter tunggal dengan manfaatkan indexing_
+	_Hal ini karena String adalah sekumpulan Char berbentuk Array, sehingga kita bisa mendapatkan karakter tunggal dengan manfaatkan 
+	
 * Loop pada String
 	```kotlin
-	fun main() {
-		val text  = "Kotlin"
-		for (char in text){
-			print("$char ") // K o t l i n 
-		}
+	val text  = "Kotlin"
+	for (char in text){
+		print("$char ") // K o t l i n 
 	}
 	```
+
 * Escaped String
 	```kotlin
 	val statement = "Kotlin is \"Awesome!\""
@@ -103,30 +97,27 @@ val name = "Budi"
 	* _\u00A9: akan menampilkan unicode ©_
 
 * Raw String
-	
 	```kotlin
-	fun main() {
-		val line = """
-			Line 1
-			Line 2
-			Line 3
-			Line 4
-		""".trimIndent()
-	
-		print(line)
-	}
+	val line = """
+		Line 1
+		Line 2
+		Line 3
+		Line 4
+	""".trimIndent()
+
+	print(line)
 
 	/*
-			Line 1
-			Line 2
-			Line 3
-			Line 4
+		Line 1
+		Line 2
+		Line 3
+		Line 4
 	*/
 	```
 	_Raw String memungkinkan kita menuliskan multiline dan arbitrary text tanpa escaped character._
 
 ## Function
-* Struktur deklarasi function
+* Struktur deklarasi Function
 	```kotlin
 	fun functionName(param1: Type1, param2: Type2, ...): ReturnType {
 		return result
@@ -137,17 +128,19 @@ val name = "Budi"
 		return "Your name is $name, and you $age years old"
 	}
 	```
-	* Jika fungsi hanya berisi satu expression untuk menentukan nilai kembalian maka dapat ditulis dengan struktur expression function
+
+	* Expression Function (Jika fungsi hanya berisi satu expression untuk menentukan nilai kembalian) 
 		```kotlin
 		fun setUser(name: String, age: Int): String = "Your name is $name, and you $age years old"
 		```
-	* Jika fungsi tidak mengembalikan nilai maka digunakan `Unit` sebagai tipe kembaliannya
+	
+	* Void Function (Jika fungsi tidak mengembalikan nilai maka digunakan `Unit` sebagai tipe kembaliannya)
 		```kotlin
 		fun printUser(name: String): Unit {
 			print("Your name is $name")
 		}
 		```
-		Atau penulisan Unit dapat dihilangkan
+		* Penulisan Unit dapat dihilangkan
 		```kotlin
 		fun printUser(name: String) {
 			print("Your name is $name")
@@ -177,9 +170,10 @@ val name = "Budi"
 	val now = 20
 
 	if (now > openHours){
-		println("office already open")
+		println("Office already open") // Office already open
 	}
 	```
+
 * If Else
 	```kotlin
 	val openHours = 7
@@ -192,8 +186,9 @@ val name = "Budi"
 		office = "Office is closed"
 	}
 	
-	print(office)
+	print(office) // Office already open
 	```
+
 * Menyimpan nilai If Expression langsung pada variable
 	```kotlin
 	val openHours = 7
@@ -206,8 +201,9 @@ val name = "Budi"
 		"Office is closed"
 	}
 	
-	print(office)
+	print(office) // Office already open
 	```
+
 * If .. Else If .. Else
 	```kotlin
 	val openHours = 7
@@ -222,70 +218,159 @@ val name = "Budi"
 		"Office is closed"
 	}
 	
-	print(office)
+	print(office) // Wait a minute, office will be open
 	```
 	&#x1F534; _Kotlin tidak mendukung ternary operator (condition ? then : else), karena peran dari operator tersebut sudah digantikan dengan if expressions._
 
 ## Boolean
 * Conjunction atau AND (&&)
 	```kotlin
-	fun main() {
-		val officeOpen = 7
-		val officeClosed = 16
-		val now = 20
-	
-		val isOpen = if (now >= officeOpen && now <= officeClosed){
-			true
-		} else {
-			false
-		}
-	
-		print("Office is open : $isOpen") // Office is open : false
+	val officeOpen = 7
+	val officeClosed = 16
+	val now = 20
+
+	val isOpen = if (now >= officeOpen && now <= officeClosed){
+		true
+	} else {
+		false
 	}
+
+	print("Office is open : $isOpen") // Office is open : false
 	```
-	Dapat disederhanakan menjadi
+	* Dapat disederhanakan menjadi
 	```kotlin
-	fun main() {
-		val officeOpen = 7
-		val officeClosed = 16
-		val now = 20
-	
-		val isOpen = now >= officeOpen && now <= officeClosed
-	
-		print("Office is open : $isOpen") // Office is open : false
-	}
+	val officeOpen = 7
+	val officeClosed = 16
+	val now = 20
+
+	val isOpen = now >= officeOpen && now <= officeClosed
+
+	print("Office is open : $isOpen") // Office is open : false
 	```
+
 * Disjunction atau OR (||)
 	```kotlin
-	fun main() {
-		val officeOpen = 7
-		val officeClosed = 16
-		val now = 20
-	
-		val isClose = now < officeOpen || now > officeClosed
-	
-		print("Office is closed : $isClose") //Office is closed : true
-	}
+	val officeOpen = 7
+	val officeClosed = 16
+	val now = 20
+
+	val isClose = now < officeOpen || now > officeClosed
+
+	print("Office is closed : $isClose") //Office is closed : true
 	```
+
 * Negation atau NOT (!)
 	```kotlin
-	fun main() {
-		val officeOpen = 7
-		val now = 10
-		val isOpen = now > officeOpen
-	
-		if (!isOpen) {
-			print("Office is closed")
-		} else {
-			print("Office is open")
-		}
-	
-		/*
-			Output : Office is open
-		*/
+	val officeOpen = 7
+	val now = 10
+	val isOpen = now > officeOpen
+
+	if (!isOpen) {
+		print("Office is closed")
+	} else {
+		print("Office is open")
 	}
+
+	/*
+		Output : Office is open
+	*/
 	```
-	
+
+## Numbers
+* Int (32 Bit)
+	```kotlin
+	val intNumber = 100
+	```
+	_range -2^31 sampai +2^31-1_
+
+* Long (64 Bit)
+	```kotlin
+	val longNumber: Long = 100
+	```
+	```kotlin
+	val longNumber = 100L
+	```
+	_range -2^63 sampai +2^63-1_
+
+* Short (16 Bit)
+	```kotlin
+	val shortNumber: Short = 10
+	```
+	```kotlin
+	val longNumber = 100L
+	```
+	_range -2^63 sampai +2^63-1_
+
+* Byte (8 Bit)
+	```kotlin
+	val byteNumber = 0b11010010
+	```
+	_range -128 sampai +127_
+
+* Double (64 Bit)
+	```kotlin
+	val doubleNumber: Double = 1.3
+	```
+	_dapat menyimpan 15-16 angka dibelakang koma_
+
+* Float (32 Bit)
+	```kotlin
+	val floatNumber: Float = 0.123456789f //yang terbaca hanya 0.1234567
+	```
+	_dapat menyimpan 6-7 angka dibelakang koma_
+
+* Nilai minimum, maximum dan Overflow
+	```kotlin
+	val minInt = Int.MIN_VALUE
+	val maxInt = Int.MAX_VALUE
+    val overRangeInt = Int.MAX_VALUE + 1 // Nilai overflow akan loop ke nilai minimum
+
+	println(minInt) // -2147483648
+	println(maxInt) // 2147483647
+    println($overRangeInt) // -2147483648
+	```
+
+* Operator Aritmatika
+	```kotlin
+    val numberOne = 1
+    val numberTwo = 2
+ 
+    println(numberOne + numberTwo) // 3
+    println(numberOne - numberTwo) // -1
+    println(numberOne * numberTwo) // 2
+    println(numberOne / numberTwo) // 0 (pembagian dikotlin dibulatkan kebawah)
+	```
+	_Jika pembagian ingin spesifik gunakan tipe data double_
+	_Operasi aritmatika mengikuti prinsip KuKaBaTaKu (Kurung Kali Bagi Tambah Kurang)_
+
+* Konversi Number
+	```kotlin
+	val byteNumber: Byte = 10
+    val intNumber: Int = byteNumber.toInt()
+
+	print(intNumber) // 10
+
+	val stringNumber = "23"
+    val intNumber3 = 3
+ 
+    print(intNumber3 + stringNumber.toInt()) // 26
+	```
+	_Dalam konversi perlu memperhatikan range overflow_
+	_Beberapa fungsi konversi number:_
+	* _toByte(): Byte_
+	* _toShort(): Short_
+	* _toInt(): Int_
+	* _toLong(): Long_
+	* _toFloat(): Float_
+	* _toDouble(): Double_
+	* _toChar(): Char_
+
+* Readable Underscore
+	```kotlin
+	val readableNumber = 1_000_000 // mudah dibaca dengan tanda underscore 
+    print(readableNumber) // 1000000
+	```
+
 ##
 ##
 
