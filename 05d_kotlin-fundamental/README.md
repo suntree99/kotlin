@@ -416,6 +416,54 @@ Array di Kotlin direpresentasikan oleh kelas Array yang memiliki fungsi *get* da
 	val intArray = Array(4, { i -> i * i }) // [0, 1, 4, 9]
 	```
 
+## Nullable Types
+NullPointerException (NPE) is *“The Billion Dollar Mistake”*
+* Secara default variabel tidak boleh bernilai null
+	```kotlin
+	val text: String = null // compile time error
+	```
+
+* Variabel boleh bernilai null jika diset sebagai nullable dengan tanda ?
+	```kotlin
+	val text: String? = null
+	```
+	Namun variable nullable tidak bisa langsung diakses
+	```kotlin
+	val textLength = text.length // compile time error
+	```
+
+* Vaeriable nullabel perlu diperiksa dahulu agar bisa diakses atau dikelola
+ 	```kotlin
+	if (text != null){
+		val textLength = text.length // ready to go
+	}
+	```
+
+## Safe Calls dan Elvis Operator
+* Safe Calls Operator (?.)
+	_Dengan safe call, kompiler akan melewatkan proses jika objek tersebut bernilai null._
+ 	```kotlin
+	val text: String? = null
+	text?.length
+	```
+* Elvis Operator (?:)
+	_Elvis operator memungkinkan kita untuk menetapkan default value atau nilai dasar jika objek bernilai null._
+ 	```kotlin
+	val text: String? = null
+	val textLength = text?.length ?: 7
+	```
+	Kode di atas sebenarnya sama seperti ketika kita menggunakan if/else berikut: 
+	```kotlin
+	val textLength = if (text != null) text.length else 7
+	```
+
+* Non-Null Assertion (!!)
+	_Non-null assertion membuat kompiler mengizinkan akses objek nullable. Namun tetap akan berjumpa dengan NPE jika objek bernilai null._
+	```kotlin
+	val text: String? = null
+	val textLength = text!!.length // ready to go ???
+	```
+
 
 ##
 ##
