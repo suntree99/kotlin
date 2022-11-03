@@ -67,10 +67,19 @@ val character = 'A'
 	_Hal ini karena setiap Char merupakan representasi dari Unicode. Ketika Unicode A (0041) ketika diincrement akan menjadi 0042 yang merupakan Unicode dari B._
 
 ## String
-String digunakan untuk menyimpan kupulan karakter, bisa dibuat menggunakan tanda kutip ganfa (" ")
+String digunakan untuk menyimpan kupulan karakter, bisa dibuat menggunakan tanda kutip ganda (" ")
 ```kotlin
 val name = 'Budi'
 ```
+```kotlin
+fun main() {
+	val text  = "Kotlin"
+	val firstChar = text[0]
+
+	print("First character of $text is $firstChar") // First character of Kotlin is K
+}
+```
+_Hal ini karena String adalah sekumpulan Char berbentuk Array, sehingga kita bisa mendapatkan karakter tunggal dengan manfaatkan indexing_
 
 ##
 ##
