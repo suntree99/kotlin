@@ -10,7 +10,7 @@
     * Semua konstruktor utama perlu dideklarasikan sebagai val atau var;
     * Modifier dari sebuah data class tidak bisa abstract, open, sealed, atau inner.
 
-* Method toString()
+* Method *toString()*
     ```kotlin
     class User(val name : String, val age : Int)
     
@@ -41,7 +41,7 @@
     }
     ```
 
-* Method equals()
+* Method *equals()*
     ```kotlin
     // Pada Data Class
     val dataUser = DataUser("nrohmen", 17)
@@ -82,6 +82,77 @@
             return result
         }
     }
+    ```
+
+* Method *copy()*
+    ```kotlin
+    val dataUser = DataUser("nrohmen", 17)
+    val dataUser2 = DataUser("nrohmen", 17)
+    val dataUser3 = DataUser("dimas", 24)
+ 
+    // Menyalin semua
+    val dataUser4 = dataUser.copy()
+    println(dataUser4) // DataUser(name=nrohmen, age=17)
+
+    // Menyalin dan memodifikasi
+    val dataUser5 = dataUser.copy(age = 18)
+    println(dataUser5) // DataUser(name=nrohmen, age=18)
+    ```
+
+* Method *component()*
+    ```kotlin
+    val dataUser = DataUser("nrohmen", 17)
+
+    val name = dataUser.component1()
+    val age = dataUser.component2()
+
+    println("My name is $name, I am $age years old") // My name is nrohmen, I am 17 years old
+    ```
+    ```kotlin
+    val dataUser = DataUser("nrohmen", 17)
+    val (name, age) = dataUser
+ 
+    println("My name is $name, I am $age years old") // My name is nrohmen, I am 17 years old
+    ```
+
+* Behaviour pada Data Class
+    ```kotlin
+    data class DataUser(val name : String, val age : Int){
+        fun intro(){
+            println("My name is $name, I am $age years old")
+        }
+    }
+
+    fun main(){
+        val dataUser = DataUser("nrohmen", 23)
+        dataUser.intro() // My name is nrohmen, I am 17 years old
+    }
+    ```
+
+## List
+* Deklarasi List
+    ```kotlin
+    val numberList : List<Int> = listOf(1, 2, 3, 4, 5) // List<Int>
+    ```
+    ```kotlin
+    val numberList = listOf(1, 2, 3, 4, 5) // List<Int>
+    val charList = listOf('a', 'b', 'c') // List<Char>
+    ```
+    ```kotlin
+    val anyList = listOf('a', "Kotlin", 3, true, User()) // List<Any>
+    ```
+    * Mengakses kompnen list dengan index
+    ```kotlin
+    println(anyList[3]) // true
+    ```
+    * Secara default List bersifat immutable, namun kita bisa membuat list yang mutable dengan _mutableListOf_
+    ```kotlin
+    val anyList = mutableListOf('a', "Kotlin", 3, true, User())
+
+    anyList.add('d') // menambah item di akhir list
+    anyList.add(1, "love") // menambah item pada indeks ke-1
+    anyList[3] = false // mengubah nilai item pada indeks ke-3
+    anyList.removeAt(0) // menghapus item pada indeks ke-0
     ```
 ##
 ##
