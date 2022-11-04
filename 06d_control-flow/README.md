@@ -445,7 +445,59 @@ _For dapat digunakan pada Ranges, Collections, Arrays dan apapun yang menyediaka
     ```
 
 ## Break and Continue Labels
+* Contoh kasus Break and Continue
+    ```kotlin
+        val listOfInt = listOf(1, 2, 3, null, 5, null, 7)
+    for (i in listOfInt) {
+        print(i) // 123null5null7
+    }
+    ```
+    _Berpotensi NullPointerException_
 
+* Solusi dengan Continue
+    ```kotlin
+    val listOfInt = listOf(1, 2, 3, null, 5, null, 7)
+ 
+    for (i in listOfInt) {
+        if (i == null) continue
+        print(i) // 12357
+    }
+    ```
+    _Proses iterasi dilanjutkan ke iterasi berikutnya saat bertemu nilai null_
+
+* Solusi dengan Break
+    ```kotlin
+    val listOfInt = listOf(1, 2, 3, null, 5, null, 7)
+ 
+    for (i in listOfInt) {
+        if (i == null) break
+        print(i) // 123
+    }
+    ```
+    _Proses iterasi dihentikan saat bertemu nilai null_
+
+* Break and Continue Label
+    ```kotlin
+    loop@ for (i in 1..10) {
+        println("Outside Loop")
+ 
+        for (j in 1..10) {
+            println("Inside Loop")
+            if ( j > 5) break@loop
+        }
+    }
+
+    /*
+       Outside Loop
+       Inside Loop
+       Inside Loop
+       Inside Loop
+       Inside Loop
+       Inside Loop
+       Inside Loop
+    */
+    ```
+    _break@loop akan menghentikan proses perulangan terluar yang ditandai dengan label loop@._
 ##
 ##
 
