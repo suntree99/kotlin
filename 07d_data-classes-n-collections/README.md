@@ -24,7 +24,8 @@
         println(dataUser) // DataUser(name=nrohmen, age=17)
     }
     ```
-    _Method toString() pada Data Class langsung menampilkan properti dan juga nilainya, sedangkan untuk Class kita harus membuat method toString() secara manual_
+    _Method toString() pada Data Class langsung menampilkan properti dan juga nilainya_
+    * _Untuk Class kita harus membuat method toString() secara manual agar menghasilkan data yang serupa_
     ```kotlin
     class User(val name : String, val age : Int){
     
@@ -58,28 +59,29 @@
     println(user.equals(user2)) // false
     println(user.equals(user3)) // false
     ```
-    _Method equals() pada Data Class langsung membandingkan properti dan juga nilainya, sedangkan untuk Class akan membandingkan lokasi object (referensi) pada memory, untuk itu kita perlu membuat method equals() secara manual_
+    _Method equals() pada Data Class langsung membandingkan properti dan nilainya, sedangkan pada Class akan membandingkan lokasi object pada memory_
+    * _Untuk Class kita perlu membuat method equals() secara manual agar menghasilkan data yang serupa_
     ```kotlin
     class User(val name : String, val age : Int){
  
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
- 
-        other as User
- 
-        if (name != other.name) return false
-        if (age != other.age) return false
- 
-        return true
+        override fun equals(other: Any?): Boolean {
+            if (this === other) return true
+            if (javaClass != other?.javaClass) return false
+    
+            other as User
+    
+            if (name != other.name) return false
+            if (age != other.age) return false
+    
+            return true
+        }
+    
+        override fun hashCode(): Int {
+            var result = name.hashCode()
+            result = 31 * result + age
+            return result
+        }
     }
- 
-    override fun hashCode(): Int {
-        var result = name.hashCode()
-        result = 31 * result + age
-        return result
-    }
-}
     ```
 ##
 ##
