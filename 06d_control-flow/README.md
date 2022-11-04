@@ -296,7 +296,154 @@
     ```
 
 ## While and Do While
-## Range and For Loop
+* While
+    ```kotlin
+    var counter = 1
+    while (counter <= 7){
+        println("Hello, World!")
+        counter++
+    }
+    ```
+
+* Do While
+    ```kotlin
+    var counter = 1
+    do {
+        println("Hello, World!")
+        counter++
+    } while (counter <= 7)
+    ```
+_While dan Do While tidak dapat digunakan untuk melakukan perulangan pada rentan angka._
+
+## Range
+* Deklarasi Range
+    ```kotlin
+    val rangeInt = 1..10
+    val downInt = 10..1
+    ```
+
+    ```kotlin
+    val rangeInt = 1.rangeTo(10)
+    val downInt = 10.downTo(1)
+    ```
+
+
+* Step pada Range
+    ```kotlin
+    val rangeInt = 1..10
+    print(rangeInt.step) // 1
+
+    rangeInt.forEach {
+    print("$it ") // 1 2 3 4 5 6 7 8 9 10
+    }
+
+    val rangeInt2 = 1..10 step 2
+    print(rangeInt2.step) // 2
+
+    rangeInt2.forEach {
+        print("$it ") // 1 3 5 7 9
+    }
+    ```
+
+* Memeriksa suatu nilai dalam range dengan *in* dan *!in*
+    ```kotlin
+    val tenToOne = 10.downTo(1)
+    if (7 in tenToOne) {
+        println("Value 7 available") // Value 7 available
+    }
+    ```
+
+    ```kotlin
+    val tenToOne = 10.downTo(1)
+    if (11 !in tenToOne) {
+        println("No value 11 in Range ") // No value 11 in Range
+    }
+    ```
+
+_Range pada Kotlin mendukung beberapa tipe integral seperti IntRange, LongRange dan CharRange._
+* Range pada Char
+    ```kotlin
+    val rangeChar = 'A'.rangeTo('F')
+    ```
+
+## For Loop
+_For dapat digunakan pada Ranges, Collections, Arrays dan apapun yang menyediakan iterator_
+* For pada Range
+    ```kotlin
+    val ranges = 1..5
+    for (i in ranges){
+        println("value is $i!")
+    }
+
+    /*
+       value is 1!
+       value is 2!
+       value is 3!
+       value is 4!
+       value is 5!
+    */
+    ```
+
+* For untuk mengakses indeks setiap elemen pada range dengan *withIndex()*
+    ```kotlin
+    val ranges = 1.rangeTo(10) step 3
+    for ((index, value) in ranges.withIndex()) {
+        println("value $value with index $index")
+    }
+
+    /*
+       value 1 with index 0
+       value 4 with index 1
+       value 7 with index 2
+       value 10 with index 3
+    /
+    ```
+
+* ForEach pada Range
+    ```kotlin
+    val ranges = 1.rangeTo(10) step 3
+    ranges.forEach { value ->
+        println("value is $value!")
+    }
+
+    /*
+       value is 1!
+       value is 4!
+       value is 7!
+       value is 10!
+    */
+    ```
+
+* ForEachIndexed untuk mengakses indeks setiap elemen pada range
+    ```kotlin
+    val ranges = 1.rangeTo(10) step 3
+    ranges.forEachIndexed { index, value ->
+        println("value $value with index $index")
+    }
+
+    /*
+       value 1 with index 0
+       value 4 with index 1
+       value 7 with index 2
+       value 10 with index 3
+    */
+    ```
+
+* ForEachIndexed tanpa salah satu agrumen digunakan uderscore (_)
+     ```kotlin
+    val ranges = 1.rangeTo(10) step 3
+    ranges.forEachIndexed { index, _ ->
+        println("index $index")
+    }
+
+    /*
+       index 0
+       index 1
+       index 2
+       index 3
+    */
+    ```
+
 ## Break and Continue Labels
 
 ##
@@ -328,8 +475,8 @@ git push
 
 ```
 
-```kotlin
+    ```kotlin
 
-```
+    ```
 
 Update README.md
